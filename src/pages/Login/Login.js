@@ -1,8 +1,6 @@
 import React from 'react';
 import { useQuery } from '@apollo/react-hooks';
-import { GET_USERS } from '../../data/queries';
-
-console.log(process.env.APOLLO_ENDPOINT);
+import { GET_USERS } from '../../data/queries/Users';
 
 const Login = () => {
   const { loading, error, data } = useQuery(GET_USERS);
